@@ -1,0 +1,10 @@
+<h1>
+    <%= product.name %>
+</h1>
+<p>Price: $<%= product.price %>
+</p>
+<form action="/addToCart" method="post">
+    <input type="hidden" name="name" value="<%= product.name %>">
+    <input type="hidden" name="price" value="<%= product.price %>">
+    <input type="submit" value="Add to Cart">
+</form>
